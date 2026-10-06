@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe, #eff6ff);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #1d4ed8;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+}
+
+.subjudul {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Foto */
+.foto {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Foto 1 */
+.foto1 {
+    left: 8%;
+    top: 170px;
+    animation: terbang1 4s ease-in-out infinite;
+}
+
+/* Foto 2 */
+.foto2 {
+    right: 8%;
+    top: 250px;
+    animation: terbang2 5s ease-in-out infinite;
+}
+
+/* Foto 3 */
+.foto3 {
+    left: 15%;
+    bottom: 80px;
+    animation: terbang3 4.5s ease-in-out infinite;
+}
+
+/* Animasi Foto */
+@keyframes terbang1 {
+    0% {
+        transform: translateY(0) rotate(-5deg);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(5deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(-5deg);
+    }
+}
+
+@keyframes terbang2 {
+    0% {
+        transform: translateY(0) rotate(5deg);
+    }
+
+    50% {
+        transform: translateY(-35px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(5deg);
+    }
+}
+
+@keyframes terbang3 {
+    0% {
+        transform: translateY(0) rotate(-4deg);
+    }
+
+    50% {
+        transform: translateY(-25px) rotate(4deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(-4deg);
+    }
+}
+
+/* Biodata */
+.biodata {
+    width: 600px;
+    max-width: 80%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+.biodata h2 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.biodata p {
+    padding: 8px 0;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+
+.judul-lagu {
+    color: #2563eb;
+    margin-top: 35px;
+}
+
+audio {
+    margin-top: 10px;
+}
+
+.penutup {
+    margin-top: 30px;
+    color: #666;
+}
